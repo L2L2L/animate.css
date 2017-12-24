@@ -1610,7 +1610,7 @@
     transform: scale(1);
   }
 }
-.hvr-push {
+.push {
   display: inline-block;
   vertical-align: middle;
   transform: perspective(1px) translateZ(0);
