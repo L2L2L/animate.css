@@ -24,29 +24,11 @@
 .animated.flipOutX,
 .animated.flipOutY,
 .animated.bounceIn,
-.animated.bounceOut,
-.animated.drop {
+.animated.bounceOut {
   animation-duration: .75s;
 }
 
 @keyframes bounce {
-  from, 20%, 53%, 80%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    transform: translate3d(0,0,0);
-  }
-
-  40%, 43% {
-    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
-    transform: translate3d(0, -30px, 0);
-  }
-}
-
-.drop {
-  animation-name: drop;
-  transform-origin: center bottom;
-}
-
-@keyframes drop {
   from, 20%, 53%, 80%, to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
     transform: translate3d(0,0,0);
@@ -67,8 +49,25 @@
   }
 }
 
-.drop {
+.bounce {
   animation-name: bounce;
+  transform-origin: center bottom;
+}
+
+@keyframes drop {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+}
+
+.drop {
+  animation-name: drop;
   transform-origin: center bottom;
 }
 
