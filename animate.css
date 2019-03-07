@@ -1706,7 +1706,7 @@
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
   /*animation properties*/
-  animation-name: hvr-buzz-out;
+  animation-name: buzz-out;
   animation-duration: 0.75s;
   animation-timing-function: linear;
   animation-iteration-count: 3;
